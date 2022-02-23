@@ -16,6 +16,8 @@ Generating 500 5K Gradient wallpapers using python and pillow and using JS to it
 - ### Resolution of images?
 #### 5K: 5120px by 2880px
 
+---
+
 - ### To do:
 - [x] Generate gradient using python
 - [x] Use Multi threading to speed up the process

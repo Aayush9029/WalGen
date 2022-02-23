@@ -12,7 +12,7 @@ def main():
     }
     """
 
-    files = listdir('./images')
+    files = listdir('./docs/images')
     json_data = []
     # sort files by name
     files.sort()
@@ -26,7 +26,7 @@ def main():
             })
             index += 1
 
-    with open('images.json', 'w') as f:
+    with open('docs/images.json', 'w') as f:
         json.dump(json_data, f, indent=4)
 
 

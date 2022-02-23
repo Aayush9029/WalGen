@@ -311,7 +311,7 @@ def main():
 
     # Using single thread to save images to disk (you could also use multiple threads)
     for i, gradient in enumerate(gradients):
-        gradient.save(f"images/{random_words[i]}.png")
+        gradient.save(f"docs/images/{random_words[i]}.png")
     
 main()
     

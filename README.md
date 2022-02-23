@@ -12,3 +12,18 @@ Generating 500 5K Gradient wallpapers using python and pillow and using JS to it
 
 - ### What are the names?
 #### Random words, don't even worry about it!
+
+- ### Resolution of images?
+#### 5K: 5120px by 2880px
+
+- ### To do:
+- [x] Generate gradient using python
+- [x] Use Multi threading to speed up the process
+- [x] Generate thumbnails (low res version of 5k images)
+- [x] Generate JSON from the images
+- [x] Use JS to iterate through JS and display thumb/images..
+- [x] Make it fancy..
+- [ ] Use P5js and canvas to create realtime gradient wallpaper generator
+- [ ] Polish interface
+- [ ] Add .zip download option
+- [ ] Add github actions for fresh gradient generation per week.

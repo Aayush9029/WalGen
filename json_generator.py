@@ -1,15 +1,18 @@
+# Generate json from images in docs/images and save to docs/images.json
+
 import json
 from os import listdir
-
 
 def main():
     """
     json struct:
-    {   
-        'index' : ''
-        'name' : '',
-        'path' : ''
-    }
+    {
+        "name": "",
+        "data": {
+            "index": 0,
+            "highres": "./images/ability.png",
+            "thumb": "./thumb/ability.png"
+        }
     """
 
     files = listdir('./docs/images')
@@ -20,9 +23,11 @@ def main():
     for file in files:
         if file.endswith("png"):
             json_data.append({
-                'index':index,
-                'name' : file.split('.')[0].title(),
-                'path' : './images/' + file
+                "name": file.split(".")[0],
+                "data": {
+                    "highres": "./images/" + file,
+                    "thumb": "./thumb/" + file
+                }
             })
             index += 1
 

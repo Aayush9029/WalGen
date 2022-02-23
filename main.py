@@ -1,3 +1,5 @@
+# Main program to generate gradient images and save to docs/images
+
 import threading
 from random import randint
 
